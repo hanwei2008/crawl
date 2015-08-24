@@ -1,0 +1,155 @@
+2015-08-21 10:11:10+0800 [-] Log opened.
+2015-08-21 10:11:10+0800 [-] twistd 15.1.0 (/home/hanwei/SoftWare/Python/ENV/VEScrapy/bin/python2.7 2.7.6) starting up.
+2015-08-21 10:11:10+0800 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2015-08-21 10:11:10+0800 [-] Site starting on 6800
+2015-08-21 10:11:10+0800 [-] Starting factory <twisted.web.server.Site instance at 0x7fce31a2c5a8>
+2015-08-21 10:11:10+0800 [Launcher] Scrapyd 1.0.1 started: max_proc=16, runner='scrapyd.runner'
+2015-08-21 10:11:13+0800 [HTTPChannel,0,127.0.0.1] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/http.py", line 1730, in allContentReceived
+	    req.requestReceived(command, path, version)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/http.py", line 827, in requestReceived
+	    self.process()
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/server.py", line 189, in process
+	    self.render(resrc)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/server.py", line 238, in render
+	    body = resrc.render(self)
+	--- <exception caught here> ---
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/webservice.py", line 18, in render
+	    return JsonResource.render(self, txrequest)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapy/utils/txweb.py", line 10, in render
+	    r = resource.Resource.render(self, txrequest)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/resource.py", line 250, in render
+	    return m(request)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/webservice.py", line 37, in render_POST
+	    self.root.scheduler.schedule(project, spider, **args)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/scheduler.py", line 15, in schedule
+	    q = self.queues[project]
+	exceptions.KeyError: 'myproject'
+	
+2015-08-21 10:11:13+0800 [HTTPChannel,0,127.0.0.1] "127.0.0.1" - - [21/Aug/2015:02:11:12 +0000] "POST /schedule.json HTTP/1.1" 200 46 "-" "curl/7.35.0"
+2015-08-21 10:11:32+0800 [HTTPChannel,1,127.0.0.1] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/http.py", line 1730, in allContentReceived
+	    req.requestReceived(command, path, version)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/http.py", line 827, in requestReceived
+	    self.process()
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/server.py", line 189, in process
+	    self.render(resrc)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/server.py", line 238, in render
+	    body = resrc.render(self)
+	--- <exception caught here> ---
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/webservice.py", line 18, in render
+	    return JsonResource.render(self, txrequest)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapy/utils/txweb.py", line 10, in render
+	    r = resource.Resource.render(self, txrequest)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/resource.py", line 250, in render
+	    return m(request)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/webservice.py", line 37, in render_POST
+	    self.root.scheduler.schedule(project, spider, **args)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/scheduler.py", line 15, in schedule
+	    q = self.queues[project]
+	exceptions.KeyError: 'myproject'
+	
+2015-08-21 10:11:32+0800 [HTTPChannel,1,127.0.0.1] "127.0.0.1" - - [21/Aug/2015:02:11:31 +0000] "POST /schedule.json HTTP/1.1" 200 46 "-" "curl/7.35.0"
+2015-08-21 10:12:13+0800 [HTTPChannel,2,127.0.0.1] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/http.py", line 1730, in allContentReceived
+	    req.requestReceived(command, path, version)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/http.py", line 827, in requestReceived
+	    self.process()
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/server.py", line 189, in process
+	    self.render(resrc)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/server.py", line 238, in render
+	    body = resrc.render(self)
+	--- <exception caught here> ---
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/webservice.py", line 18, in render
+	    return JsonResource.render(self, txrequest)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapy/utils/txweb.py", line 10, in render
+	    r = resource.Resource.render(self, txrequest)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/resource.py", line 250, in render
+	    return m(request)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/webservice.py", line 37, in render_POST
+	    self.root.scheduler.schedule(project, spider, **args)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/scheduler.py", line 15, in schedule
+	    q = self.queues[project]
+	exceptions.KeyError: 'industry-bgku'
+	
+2015-08-21 10:12:13+0800 [HTTPChannel,2,127.0.0.1] "127.0.0.1" - - [21/Aug/2015:02:12:12 +0000] "POST /schedule.json HTTP/1.1" 200 50 "-" "curl/7.35.0"
+2015-08-21 10:12:27+0800 [HTTPChannel,3,127.0.0.1] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/http.py", line 1730, in allContentReceived
+	    req.requestReceived(command, path, version)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/http.py", line 827, in requestReceived
+	    self.process()
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/server.py", line 189, in process
+	    self.render(resrc)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/server.py", line 238, in render
+	    body = resrc.render(self)
+	--- <exception caught here> ---
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/webservice.py", line 18, in render
+	    return JsonResource.render(self, txrequest)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapy/utils/txweb.py", line 10, in render
+	    r = resource.Resource.render(self, txrequest)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/resource.py", line 250, in render
+	    return m(request)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/webservice.py", line 37, in render_POST
+	    self.root.scheduler.schedule(project, spider, **args)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/scheduler.py", line 15, in schedule
+	    q = self.queues[project]
+	exceptions.KeyError: 'industry-bgku'
+	
+2015-08-21 10:12:27+0800 [HTTPChannel,3,127.0.0.1] "127.0.0.1" - - [21/Aug/2015:02:12:26 +0000] "POST /schedule.json HTTP/1.1" 200 50 "-" "curl/7.35.0"
+2015-08-21 10:14:49+0800 [HTTPChannel,4,127.0.0.1] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/http.py", line 1730, in allContentReceived
+	    req.requestReceived(command, path, version)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/http.py", line 827, in requestReceived
+	    self.process()
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/server.py", line 189, in process
+	    self.render(resrc)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/server.py", line 238, in render
+	    body = resrc.render(self)
+	--- <exception caught here> ---
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/webservice.py", line 18, in render
+	    return JsonResource.render(self, txrequest)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapy/utils/txweb.py", line 10, in render
+	    r = resource.Resource.render(self, txrequest)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/resource.py", line 250, in render
+	    return m(request)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/webservice.py", line 37, in render_POST
+	    self.root.scheduler.schedule(project, spider, **args)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/scheduler.py", line 15, in schedule
+	    q = self.queues[project]
+	exceptions.KeyError: 'myproject'
+	
+2015-08-21 10:14:49+0800 [HTTPChannel,4,127.0.0.1] "127.0.0.1" - - [21/Aug/2015:02:14:48 +0000] "POST /schedule.json HTTP/1.1" 200 46 "-" "curl/7.35.0"
+2015-08-21 10:15:03+0800 [HTTPChannel,5,127.0.0.1] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/http.py", line 1730, in allContentReceived
+	    req.requestReceived(command, path, version)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/http.py", line 827, in requestReceived
+	    self.process()
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/server.py", line 189, in process
+	    self.render(resrc)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/server.py", line 238, in render
+	    body = resrc.render(self)
+	--- <exception caught here> ---
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/webservice.py", line 18, in render
+	    return JsonResource.render(self, txrequest)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapy/utils/txweb.py", line 10, in render
+	    r = resource.Resource.render(self, txrequest)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/twisted/web/resource.py", line 250, in render
+	    return m(request)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/webservice.py", line 37, in render_POST
+	    self.root.scheduler.schedule(project, spider, **args)
+	  File "/home/hanwei/SoftWare/Python/ENV/VEScrapy/local/lib/python2.7/site-packages/scrapyd/scheduler.py", line 15, in schedule
+	    q = self.queues[project]
+	exceptions.KeyError: 'industry-bgku'
+	
+2015-08-21 10:15:03+0800 [HTTPChannel,5,127.0.0.1] "127.0.0.1" - - [21/Aug/2015:02:15:02 +0000] "POST /schedule.json HTTP/1.1" 200 50 "-" "curl/7.35.0"
+2015-08-21 10:16:51+0800 [-] Received SIGTERM, shutting down.
+2015-08-21 10:16:51+0800 [-] (TCP Port 6800 Closed)
+2015-08-21 10:16:51+0800 [-] Stopping factory <twisted.web.server.Site instance at 0x7fce31a2c5a8>
+2015-08-21 10:16:51+0800 [-] Main loop terminated.
+2015-08-21 10:16:51+0800 [-] Server Shut Down.

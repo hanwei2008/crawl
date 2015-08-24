@@ -1,0 +1,86 @@
+2015-08-21 10:14:20+0800 [scrapy] INFO: Scrapy 0.24.5 started (bot: IndustryReportSpider)
+2015-08-21 10:14:20+0800 [scrapy] INFO: Optional features available: ssl, http11
+2015-08-21 10:14:20+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'IndustryReportSpider.spiders', 'LOG_LEVEL': 'INFO', 'SPIDER_MODULES': ['IndustryReportSpider.spiders'], 'RETRY_TIMES': 400, 'BOT_NAME': 'IndustryReportSpider', 'DOWNLOAD_DELAY': 2}
+2015-08-21 10:14:20+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-08-21 10:14:20+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-08-21 10:14:20+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-08-21 10:14:20+0800 [scrapy] INFO: Enabled item pipelines: DuplicatesPipeline, DownloadPipeline, SolrPipeline
+2015-08-21 10:14:20+0800 [industry-bgku] INFO: Spider opened
+2015-08-21 10:14:20+0800 [industry-bgku] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-08-21 10:15:20+0800 [industry-bgku] INFO: Crawled 3 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2015-08-21 10:16:20+0800 [industry-bgku] INFO: Crawled 9 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2015-08-21 10:16:57+0800 [scrapy] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2015-08-21 10:16:57+0800 [industry-bgku] INFO: Closing spider (shutdown)
+2015-08-21 10:17:20+0800 [industry-bgku] INFO: Crawled 15 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2015-08-21 10:18:20+0800 [industry-bgku] INFO: Crawled 20 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2015-08-21 10:19:20+0800 [industry-bgku] INFO: Crawled 25 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2015-08-21 10:19:28+0800 [industry-bgku] INFO: Dumping Scrapy stats:
+	{'downloader/exception_count': 3,
+	 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 3,
+	 'downloader/request_bytes': 8965,
+	 'downloader/request_count': 29,
+	 'downloader/request_method_count/GET': 29,
+	 'downloader/response_bytes': 611698,
+	 'downloader/response_count': 26,
+	 'downloader/response_status_count/200': 26,
+	 'finish_reason': 'shutdown',
+	 'finish_time': datetime.datetime(2015, 8, 21, 2, 19, 28, 896625),
+	 'log_count/INFO': 13,
+	 'request_depth_max': 1,
+	 'response_received_count': 26,
+	 'scheduler/dequeued': 29,
+	 'scheduler/dequeued/memory': 29,
+	 'scheduler/enqueued': 3274,
+	 'scheduler/enqueued/memory': 3274,
+	 'start_time': datetime.datetime(2015, 8, 21, 2, 14, 20, 782737)}
+2015-08-21 10:19:28+0800 [industry-bgku] INFO: Spider closed (shutdown)
+****************************** 1 ******************************
+****************************** 第 1 页 ******************************
+****************************** 330 ******************************
+****************************** 第 2 页 ******************************
+****************************** 329 ******************************
+****************************** 第 3 页 ******************************
+****************************** 328 ******************************
+****************************** 第 4 页 ******************************
+****************************** 327 ******************************
+****************************** 第 5 页 ******************************
+****************************** 326 ******************************
+****************************** 第 6 页 ******************************
+****************************** 337 ******************************
+****************************** 第 7 页 ******************************
+****************************** 324 ******************************
+****************************** 第 8 页 ******************************
+****************************** 323 ******************************
+****************************** 第 9 页 ******************************
+****************************** 3270 ******************************
+****************************** 第 10 页 ******************************
+****************************** 336 ******************************
+****************************** 第 11 页 ******************************
+****************************** 335 ******************************
+****************************** 第 12 页 ******************************
+****************************** 3267 ******************************
+****************************** 第 13 页 ******************************
+****************************** 3266 ******************************
+****************************** 第 14 页 ******************************
+****************************** 3265 ******************************
+****************************** 第 15 页 ******************************
+****************************** 3264 ******************************
+****************************** 第 16 页 ******************************
+****************************** 334 ******************************
+****************************** 第 17 页 ******************************
+****************************** 3262 ******************************
+****************************** 第 18 页 ******************************
+****************************** 3261 ******************************
+****************************** 第 19 页 ******************************
+****************************** 325 ******************************
+****************************** 第 20 页 ******************************
+****************************** 3269 ******************************
+****************************** 第 21 页 ******************************
+****************************** 3268 ******************************
+****************************** 第 22 页 ******************************
+****************************** 3263 ******************************
+****************************** 第 23 页 ******************************
+****************************** 3260 ******************************
+****************************** 第 24 页 ******************************
+****************************** 3259 ******************************
+****************************** 第 25 页 ******************************
